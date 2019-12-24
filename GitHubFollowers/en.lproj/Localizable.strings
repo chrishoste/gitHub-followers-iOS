@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  GitHubFollowers
+
+  Created by Christophe Hoste on 24.12.19.
+  Copyright © 2019 Christophe Hoste. All rights reserved.
+*/
+
+"YES" = "Yes";
+"NO" = "No";
+"DONE" = "Done";
+"OK" = "Ok";
