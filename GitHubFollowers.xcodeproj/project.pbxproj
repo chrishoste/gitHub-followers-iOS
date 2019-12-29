@@ -17,10 +17,17 @@
 		C40E9BE523B206C8002A266A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40E9BE323B206C8002A266A /* LaunchScreen.storyboard */; };
 		C40E9BF023B206C8002A266A /* GitHubFollowersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40E9BEF23B206C8002A266A /* GitHubFollowersTests.swift */; };
 		C40E9BFB23B206C8002A266A /* GitHubFollowersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40E9BFA23B206C8002A266A /* GitHubFollowersUITests.swift */; };
+		C45592CE23B81F21005B6A52 /* NetworkingService+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592CD23B81F21005B6A52 /* NetworkingService+Errors.swift */; };
+		C45592D023B81FCB005B6A52 /* AppURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592CF23B81FCB005B6A52 /* AppURLs.swift */; };
+		C45592D423B824D6005B6A52 /* FollowerSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592D323B824D6005B6A52 /* FollowerSearchViewController.swift */; };
+		C45592D623B82C75005B6A52 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592D523B82C75005B6A52 /* UILabel+Extension.swift */; };
+		C45592D823B82CBB005B6A52 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592D723B82CBB005B6A52 /* UIImageView+Extension.swift */; };
 		C4E9126523B2095E00480C91 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126423B2095E00480C91 /* Colors.swift */; };
 		C4E9126723B2096B00480C91 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126623B2096B00480C91 /* Localization.swift */; };
 		C4E9126923B2097700480C91 /* Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126823B2097700480C91 /* Autolayout.swift */; };
 		C4E9126D23B20A2F00480C91 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4E9126F23B20A2F00480C91 /* Localizable.strings */; };
+		C4E9127223B80FDB00480C91 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9127123B80FDB00480C91 /* NetworkingService.swift */; };
+		C4E9127623B810AE00480C91 /* Followers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9127523B810AE00480C91 /* Followers.swift */; };
 		F52F03085F386B45037C3FD0 /* Pods_GitHubFollowersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098B01CE35777BF64ABAC3F /* Pods_GitHubFollowersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,12 +69,19 @@
 		C40E9BF623B206C8002A266A /* GitHubFollowersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubFollowersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40E9BFA23B206C8002A266A /* GitHubFollowersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFollowersUITests.swift; sourceTree = "<group>"; };
 		C40E9BFC23B206C8002A266A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C45592CD23B81F21005B6A52 /* NetworkingService+Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkingService+Errors.swift"; sourceTree = "<group>"; };
+		C45592CF23B81FCB005B6A52 /* AppURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppURLs.swift; sourceTree = "<group>"; };
+		C45592D323B824D6005B6A52 /* FollowerSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerSearchViewController.swift; sourceTree = "<group>"; };
+		C45592D523B82C75005B6A52 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		C45592D723B82CBB005B6A52 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		C4E9126423B2095E00480C91 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C4E9126623B2096B00480C91 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C4E9126823B2097700480C91 /* Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autolayout.swift; sourceTree = "<group>"; };
 		C4E9126C23B20A1A00480C91 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4E9126E23B20A2F00480C91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C4E9127023B20A3900480C91 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C4E9127123B80FDB00480C91 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		C4E9127523B810AE00480C91 /* Followers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Followers.swift; sourceTree = "<group>"; };
 		C6CD485AA32DF612D5156B00 /* Pods-GitHubFollowers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubFollowers.debug.xcconfig"; path = "Target Support Files/Pods-GitHubFollowers/Pods-GitHubFollowers.debug.xcconfig"; sourceTree = "<group>"; };
 		D327256DCE91231BF3511EB1 /* Pods_GitHubFollowersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubFollowersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,11 +166,13 @@
 				C40E9BD523B206C7002A266A /* AppDelegate.swift */,
 				C40E9BD723B206C7002A266A /* SceneDelegate.swift */,
 				C40E9BD923B206C7002A266A /* ViewController.swift */,
+				C45592D123B82491005B6A52 /* Controllers */,
+				C4E9127423B8109500480C91 /* Models */,
+				C4E9127323B8108C00480C91 /* Services */,
 				C4E9126323B2094200480C91 /* Helper */,
 				C4E9126223B2092D00480C91 /* Ressources */,
 				C40E9BE323B206C8002A266A /* LaunchScreen.storyboard */,
 				C40E9BDE23B206C7002A266A /* GitHubFollowers.xcdatamodeld */,
-				C4E9126F23B20A2F00480C91 /* Localizable.strings */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -179,9 +195,35 @@
 			path = GitHubFollowersUITests;
 			sourceTree = "<group>";
 		};
+		C45592CC23B81F07005B6A52 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C4E9127123B80FDB00480C91 /* NetworkingService.swift */,
+				C45592CD23B81F21005B6A52 /* NetworkingService+Errors.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C45592D123B82491005B6A52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C45592D223B824A1005B6A52 /* FirstScreen */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C45592D223B824A1005B6A52 /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C45592D323B824D6005B6A52 /* FollowerSearchViewController.swift */,
+			);
+			path = FirstScreen;
+			sourceTree = "<group>";
+		};
 		C4E9126223B2092D00480C91 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				C4E9126F23B20A2F00480C91 /* Localizable.strings */,
 				C40E9BE123B206C8002A266A /* Assets.xcassets */,
 			);
 			path = Ressources;
@@ -193,8 +235,27 @@
 				C4E9126423B2095E00480C91 /* Colors.swift */,
 				C4E9126623B2096B00480C91 /* Localization.swift */,
 				C4E9126823B2097700480C91 /* Autolayout.swift */,
+				C45592CF23B81FCB005B6A52 /* AppURLs.swift */,
+				C45592D523B82C75005B6A52 /* UILabel+Extension.swift */,
+				C45592D723B82CBB005B6A52 /* UIImageView+Extension.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		C4E9127323B8108C00480C91 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C45592CC23B81F07005B6A52 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4E9127423B8109500480C91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4E9127523B810AE00480C91 /* Followers.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,10 +482,17 @@
 			files = (
 				C40E9BE023B206C7002A266A /* GitHubFollowers.xcdatamodeld in Sources */,
 				C4E9126523B2095E00480C91 /* Colors.swift in Sources */,
+				C45592D823B82CBB005B6A52 /* UIImageView+Extension.swift in Sources */,
 				C4E9126723B2096B00480C91 /* Localization.swift in Sources */,
+				C45592D023B81FCB005B6A52 /* AppURLs.swift in Sources */,
+				C45592D423B824D6005B6A52 /* FollowerSearchViewController.swift in Sources */,
+				C4E9127623B810AE00480C91 /* Followers.swift in Sources */,
+				C4E9127223B80FDB00480C91 /* NetworkingService.swift in Sources */,
 				C40E9BDA23B206C7002A266A /* ViewController.swift in Sources */,
 				C40E9BD623B206C7002A266A /* AppDelegate.swift in Sources */,
 				C4E9126923B2097700480C91 /* Autolayout.swift in Sources */,
+				C45592CE23B81F21005B6A52 /* NetworkingService+Errors.swift in Sources */,
+				C45592D623B82C75005B6A52 /* UILabel+Extension.swift in Sources */,
 				C40E9BD823B206C7002A266A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

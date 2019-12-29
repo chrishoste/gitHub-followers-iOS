@@ -6,6 +6,7 @@
 //  Copyright © 2019 Christophe Hoste. All rights reserved.
 //
 
+// swiftlint:disable identifier_name
 import Foundation
 
 public func localized(_ key: LocalizationKey) -> String {
