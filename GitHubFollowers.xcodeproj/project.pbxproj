@@ -22,6 +22,8 @@
 		C45592D423B824D6005B6A52 /* FollowerSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592D323B824D6005B6A52 /* FollowerSearchViewController.swift */; };
 		C45592D623B82C75005B6A52 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592D523B82C75005B6A52 /* UILabel+Extension.swift */; };
 		C45592D823B82CBB005B6A52 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592D723B82CBB005B6A52 /* UIImageView+Extension.swift */; };
+		C45592DA23B830AD005B6A52 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592D923B830AD005B6A52 /* UIStackView+Extension.swift */; };
+		C45592DC23B831FD005B6A52 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592DB23B831FD005B6A52 /* SearchTextField.swift */; };
 		C4E9126523B2095E00480C91 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126423B2095E00480C91 /* Colors.swift */; };
 		C4E9126723B2096B00480C91 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126623B2096B00480C91 /* Localization.swift */; };
 		C4E9126923B2097700480C91 /* Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126823B2097700480C91 /* Autolayout.swift */; };
@@ -74,6 +76,8 @@
 		C45592D323B824D6005B6A52 /* FollowerSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerSearchViewController.swift; sourceTree = "<group>"; };
 		C45592D523B82C75005B6A52 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		C45592D723B82CBB005B6A52 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		C45592D923B830AD005B6A52 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		C45592DB23B831FD005B6A52 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		C4E9126423B2095E00480C91 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C4E9126623B2096B00480C91 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C4E9126823B2097700480C91 /* Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autolayout.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				C45592D323B824D6005B6A52 /* FollowerSearchViewController.swift */,
+				C45592DB23B831FD005B6A52 /* SearchTextField.swift */,
 			);
 			path = FirstScreen;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 				C45592CF23B81FCB005B6A52 /* AppURLs.swift */,
 				C45592D523B82C75005B6A52 /* UILabel+Extension.swift */,
 				C45592D723B82CBB005B6A52 /* UIImageView+Extension.swift */,
+				C45592D923B830AD005B6A52 /* UIStackView+Extension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -488,12 +494,14 @@
 				C45592D423B824D6005B6A52 /* FollowerSearchViewController.swift in Sources */,
 				C4E9127623B810AE00480C91 /* Followers.swift in Sources */,
 				C4E9127223B80FDB00480C91 /* NetworkingService.swift in Sources */,
+				C45592DA23B830AD005B6A52 /* UIStackView+Extension.swift in Sources */,
 				C40E9BDA23B206C7002A266A /* ViewController.swift in Sources */,
 				C40E9BD623B206C7002A266A /* AppDelegate.swift in Sources */,
 				C4E9126923B2097700480C91 /* Autolayout.swift in Sources */,
 				C45592CE23B81F21005B6A52 /* NetworkingService+Errors.swift in Sources */,
 				C45592D623B82C75005B6A52 /* UILabel+Extension.swift in Sources */,
 				C40E9BD823B206C7002A266A /* SceneDelegate.swift in Sources */,
+				C45592DC23B831FD005B6A52 /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

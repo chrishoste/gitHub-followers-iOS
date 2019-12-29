@@ -8,7 +8,6 @@
 
 import UIKit
 
-// TODO before use is to create the colors in the color assets.
 extension UIColor {
     static var backgroundAny: UIColor {
         return UIColor(named: "backgroundAny") ?? .white
