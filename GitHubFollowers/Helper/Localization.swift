@@ -16,4 +16,9 @@ public func localized(_ key: LocalizationKey) -> String {
 public enum LocalizationKey: String {
 
     case DONE, OK, YES, NO
+    case SEARCH
+    case FAVE
+    case ENTER_USERNAME
+    case FOLLOWERS
+    case GET_PROFILES
 }

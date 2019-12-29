@@ -24,6 +24,10 @@
 		C45592D823B82CBB005B6A52 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592D723B82CBB005B6A52 /* UIImageView+Extension.swift */; };
 		C45592DA23B830AD005B6A52 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592D923B830AD005B6A52 /* UIStackView+Extension.swift */; };
 		C45592DC23B831FD005B6A52 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592DB23B831FD005B6A52 /* SearchTextField.swift */; };
+		C45592DF23B94E49005B6A52 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592DE23B94E49005B6A52 /* TabbarViewController.swift */; };
+		C45592E323B95520005B6A52 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592E223B95520005B6A52 /* DefaultButton.swift */; };
+		C45592E723B957C3005B6A52 /* ProfilesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592E623B957C3005B6A52 /* ProfilesCollectionViewController.swift */; };
+		C46F651A23B95B2F00FE2A7C /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F651923B95B2F00FE2A7C /* CustomAlertViewController.swift */; };
 		C4E9126523B2095E00480C91 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126423B2095E00480C91 /* Colors.swift */; };
 		C4E9126723B2096B00480C91 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126623B2096B00480C91 /* Localization.swift */; };
 		C4E9126923B2097700480C91 /* Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126823B2097700480C91 /* Autolayout.swift */; };
@@ -78,6 +82,10 @@
 		C45592D723B82CBB005B6A52 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		C45592D923B830AD005B6A52 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		C45592DB23B831FD005B6A52 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		C45592DE23B94E49005B6A52 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		C45592E223B95520005B6A52 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		C45592E623B957C3005B6A52 /* ProfilesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesCollectionViewController.swift; sourceTree = "<group>"; };
+		C46F651923B95B2F00FE2A7C /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		C4E9126423B2095E00480C91 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C4E9126623B2096B00480C91 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C4E9126823B2097700480C91 /* Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autolayout.swift; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 				C40E9BD723B206C7002A266A /* SceneDelegate.swift */,
 				C40E9BD923B206C7002A266A /* ViewController.swift */,
 				C45592D123B82491005B6A52 /* Controllers */,
+				C45592E023B954ED005B6A52 /* Custom Views */,
 				C4E9127423B8109500480C91 /* Models */,
 				C4E9127323B8108C00480C91 /* Services */,
 				C4E9126323B2094200480C91 /* Helper */,
@@ -211,7 +220,9 @@
 		C45592D123B82491005B6A52 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C45592D223B824A1005B6A52 /* FirstScreen */,
+				C46F651823B95B1D00FE2A7C /* Alert */,
+				C45592DD23B94E2D005B6A52 /* TabbarController */,
+				C45592E423B95767005B6A52 /* SearchTab */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -223,6 +234,47 @@
 				C45592DB23B831FD005B6A52 /* SearchTextField.swift */,
 			);
 			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		C45592DD23B94E2D005B6A52 /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				C45592DE23B94E49005B6A52 /* TabbarViewController.swift */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		C45592E023B954ED005B6A52 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				C45592E223B95520005B6A52 /* DefaultButton.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		C45592E423B95767005B6A52 /* SearchTab */ = {
+			isa = PBXGroup;
+			children = (
+				C45592D223B824A1005B6A52 /* FirstScreen */,
+				C45592E523B9579D005B6A52 /* SecondScreen */,
+			);
+			path = SearchTab;
+			sourceTree = "<group>";
+		};
+		C45592E523B9579D005B6A52 /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C45592E623B957C3005B6A52 /* ProfilesCollectionViewController.swift */,
+			);
+			path = SecondScreen;
+			sourceTree = "<group>";
+		};
+		C46F651823B95B1D00FE2A7C /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				C46F651923B95B2F00FE2A7C /* CustomAlertViewController.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		C4E9126223B2092D00480C91 /* Ressources */ = {
@@ -493,12 +545,16 @@
 				C45592D023B81FCB005B6A52 /* AppURLs.swift in Sources */,
 				C45592D423B824D6005B6A52 /* FollowerSearchViewController.swift in Sources */,
 				C4E9127623B810AE00480C91 /* Followers.swift in Sources */,
+				C45592DF23B94E49005B6A52 /* TabbarViewController.swift in Sources */,
 				C4E9127223B80FDB00480C91 /* NetworkingService.swift in Sources */,
 				C45592DA23B830AD005B6A52 /* UIStackView+Extension.swift in Sources */,
+				C45592E723B957C3005B6A52 /* ProfilesCollectionViewController.swift in Sources */,
 				C40E9BDA23B206C7002A266A /* ViewController.swift in Sources */,
 				C40E9BD623B206C7002A266A /* AppDelegate.swift in Sources */,
 				C4E9126923B2097700480C91 /* Autolayout.swift in Sources */,
+				C45592E323B95520005B6A52 /* DefaultButton.swift in Sources */,
 				C45592CE23B81F21005B6A52 /* NetworkingService+Errors.swift in Sources */,
+				C46F651A23B95B2F00FE2A7C /* CustomAlertViewController.swift in Sources */,
 				C45592D623B82C75005B6A52 /* UILabel+Extension.swift in Sources */,
 				C40E9BD823B206C7002A266A /* SceneDelegate.swift in Sources */,
 				C45592DC23B831FD005B6A52 /* SearchTextField.swift in Sources */,

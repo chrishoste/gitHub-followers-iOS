@@ -16,4 +16,16 @@ extension UIColor {
     static var textColor: UIColor {
         return UIColor(named: "textColor") ?? .black
     }
+
+    static var greenButton: UIColor {
+        return UIColor(named: "greenButton") ?? .green
+    }
+
+    static var purpleButton: UIColor {
+        return UIColor(named: "purpleButton") ?? .purple
+    }
+
+    static var redButton: UIColor {
+        return UIColor(named: "redButton") ?? .red
+    }
 }

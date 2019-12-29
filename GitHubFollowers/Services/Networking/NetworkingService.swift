@@ -10,13 +10,19 @@ import Foundation
 
 class NetworkingService {
 
+    private let session: URLSession
+
+    init(session: URLSession = URLSession.shared) {
+        self.session = session
+    }
+
     func fetch<T: Decodable>(objectType: T.Type, urlString: String, completion: @escaping (Result<T, Error>) -> Void) {
 
         guard let url = URL(string: urlString) else {
             return
         }
 
-        URLSession.shared.dataTask(with: url) { (data, response, err) in
+        session.dataTask(with: url) { (data, response, err) in
 
             if let error = err {
                 completion(.failure(error))

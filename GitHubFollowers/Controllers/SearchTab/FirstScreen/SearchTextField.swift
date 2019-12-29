@@ -12,7 +12,7 @@ class SearchTextField: UITextField {
 
     init() {
         super.init(frame: .zero)
-        self.placeholder = "Enter Username"
+        self.placeholder = localized(.ENTER_USERNAME)
         self.textAlignment = .center
         self.layer.borderWidth = 2
         self.layer.borderColor = UIColor.lightGray.cgColor

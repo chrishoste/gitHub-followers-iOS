@@ -13,6 +13,7 @@ public enum NetworkingError: Error {
     case noValidData
 }
 
+// TODO Localize Error Messages
 extension NetworkingError: LocalizedError {
     public var errorDescription: String? {
         switch self {

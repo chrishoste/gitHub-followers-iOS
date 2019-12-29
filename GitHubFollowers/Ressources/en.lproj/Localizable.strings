@@ -6,7 +6,21 @@
   Copyright © 2019 Christophe Hoste. All rights reserved.
 */
 
+// General
 "YES" = "Yes";
 "NO" = "No";
 "DONE" = "Done";
 "OK" = "Ok";
+
+// Tabbar
+"SEARCH" = "Search";
+"FAVE" = "Favorites";
+
+// SearchTextField
+"ENTER_USERNAME" = "Enter Username";
+
+// FollowersSearchVuewController
+"FOLLOWERS" = "Followers";
+
+// Button
+"GET_PROFILES" = "Get Profiles";
