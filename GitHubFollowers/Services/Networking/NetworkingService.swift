@@ -16,7 +16,7 @@ class NetworkingService {
         self.session = session
     }
 
-    func fetch<T: Decodable>(objectType: T.Type, urlString: String, completion: @escaping (Result<T, Error>) -> Void) {
+    private func fetch<T: Decodable>(objectType: T.Type, urlString: String, completion: @escaping (Result<T, Error>) -> Void) {
 
         guard let url = URL(string: urlString) else {
             return
@@ -46,5 +46,11 @@ class NetworkingService {
             }
 
         }.resume()
+    }
+
+    func getProfiles(username: String, completion: @escaping (Result<[Follower], Error>) -> Void) {
+        fetch(objectType: [Follower].self, urlString: AppURLs.followersURL(username: username)) { (result) in
+            completion(result)
+        }
     }
 }

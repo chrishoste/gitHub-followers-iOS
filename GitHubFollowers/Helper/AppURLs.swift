@@ -15,7 +15,7 @@ struct AppURLs {
         fileprivate static let ProdBaseURL = "https://api.github.com"
     }
 
-    private  struct Routes {
+    private struct Routes {
         fileprivate static let Users = "/users"
         fileprivate static let Followers = "/followers"
     }

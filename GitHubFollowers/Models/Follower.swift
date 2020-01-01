@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Followers: Decodable {
+struct Follower: Decodable {
     let login: String
 }

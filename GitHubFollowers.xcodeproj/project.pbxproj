@@ -28,12 +28,15 @@
 		C45592E323B95520005B6A52 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592E223B95520005B6A52 /* DefaultButton.swift */; };
 		C45592E723B957C3005B6A52 /* ProfilesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45592E623B957C3005B6A52 /* ProfilesCollectionViewController.swift */; };
 		C46F651A23B95B2F00FE2A7C /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F651923B95B2F00FE2A7C /* CustomAlertViewController.swift */; };
+		C46F651C23BCBF1D00FE2A7C /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F651B23BCBF1D00FE2A7C /* AlertService.swift */; };
+		C46F651E23BCCE1900FE2A7C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F651D23BCCE1900FE2A7C /* Alert.swift */; };
+		C46F652023BCD11C00FE2A7C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F651F23BCD11C00FE2A7C /* Constants.swift */; };
 		C4E9126523B2095E00480C91 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126423B2095E00480C91 /* Colors.swift */; };
 		C4E9126723B2096B00480C91 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126623B2096B00480C91 /* Localization.swift */; };
 		C4E9126923B2097700480C91 /* Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126823B2097700480C91 /* Autolayout.swift */; };
 		C4E9126D23B20A2F00480C91 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4E9126F23B20A2F00480C91 /* Localizable.strings */; };
 		C4E9127223B80FDB00480C91 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9127123B80FDB00480C91 /* NetworkingService.swift */; };
-		C4E9127623B810AE00480C91 /* Followers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9127523B810AE00480C91 /* Followers.swift */; };
+		C4E9127623B810AE00480C91 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9127523B810AE00480C91 /* Follower.swift */; };
 		F52F03085F386B45037C3FD0 /* Pods_GitHubFollowersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098B01CE35777BF64ABAC3F /* Pods_GitHubFollowersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,14 +89,17 @@
 		C45592E223B95520005B6A52 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		C45592E623B957C3005B6A52 /* ProfilesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesCollectionViewController.swift; sourceTree = "<group>"; };
 		C46F651923B95B2F00FE2A7C /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		C46F651B23BCBF1D00FE2A7C /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		C46F651D23BCCE1900FE2A7C /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		C46F651F23BCD11C00FE2A7C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C49E84AD23BCD7FF00485F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4E9126423B2095E00480C91 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C4E9126623B2096B00480C91 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C4E9126823B2097700480C91 /* Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autolayout.swift; sourceTree = "<group>"; };
-		C4E9126C23B20A1A00480C91 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4E9126E23B20A2F00480C91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C4E9127023B20A3900480C91 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C4E9127123B80FDB00480C91 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
-		C4E9127523B810AE00480C91 /* Followers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Followers.swift; sourceTree = "<group>"; };
+		C4E9127523B810AE00480C91 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		C6CD485AA32DF612D5156B00 /* Pods-GitHubFollowers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubFollowers.debug.xcconfig"; path = "Target Support Files/Pods-GitHubFollowers/Pods-GitHubFollowers.debug.xcconfig"; sourceTree = "<group>"; };
 		D327256DCE91231BF3511EB1 /* Pods_GitHubFollowersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubFollowersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -296,6 +302,7 @@
 				C45592D523B82C75005B6A52 /* UILabel+Extension.swift */,
 				C45592D723B82CBB005B6A52 /* UIImageView+Extension.swift */,
 				C45592D923B830AD005B6A52 /* UIStackView+Extension.swift */,
+				C46F651F23BCD11C00FE2A7C /* Constants.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -304,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				C45592CC23B81F07005B6A52 /* Networking */,
+				C46F651B23BCBF1D00FE2A7C /* AlertService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -311,7 +319,8 @@
 		C4E9127423B8109500480C91 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C4E9127523B810AE00480C91 /* Followers.swift */,
+				C4E9127523B810AE00480C91 /* Follower.swift */,
+				C46F651D23BCCE1900FE2A7C /* Alert.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -406,6 +415,7 @@
 			knownRegions = (
 				en,
 				de,
+				Base,
 			);
 			mainGroup = C40E9BC923B206C7002A266A;
 			productRefGroup = C40E9BD323B206C7002A266A /* Products */;
@@ -544,8 +554,10 @@
 				C4E9126723B2096B00480C91 /* Localization.swift in Sources */,
 				C45592D023B81FCB005B6A52 /* AppURLs.swift in Sources */,
 				C45592D423B824D6005B6A52 /* FollowerSearchViewController.swift in Sources */,
-				C4E9127623B810AE00480C91 /* Followers.swift in Sources */,
+				C46F652023BCD11C00FE2A7C /* Constants.swift in Sources */,
+				C4E9127623B810AE00480C91 /* Follower.swift in Sources */,
 				C45592DF23B94E49005B6A52 /* TabbarViewController.swift in Sources */,
+				C46F651E23BCCE1900FE2A7C /* Alert.swift in Sources */,
 				C4E9127223B80FDB00480C91 /* NetworkingService.swift in Sources */,
 				C45592DA23B830AD005B6A52 /* UIStackView+Extension.swift in Sources */,
 				C45592E723B957C3005B6A52 /* ProfilesCollectionViewController.swift in Sources */,
@@ -554,6 +566,7 @@
 				C4E9126923B2097700480C91 /* Autolayout.swift in Sources */,
 				C45592E323B95520005B6A52 /* DefaultButton.swift in Sources */,
 				C45592CE23B81F21005B6A52 /* NetworkingService+Errors.swift in Sources */,
+				C46F651C23BCBF1D00FE2A7C /* AlertService.swift in Sources */,
 				C46F651A23B95B2F00FE2A7C /* CustomAlertViewController.swift in Sources */,
 				C45592D623B82C75005B6A52 /* UILabel+Extension.swift in Sources */,
 				C40E9BD823B206C7002A266A /* SceneDelegate.swift in Sources */,
@@ -596,7 +609,7 @@
 		C40E9BE323B206C8002A266A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C4E9126C23B20A1A00480C91 /* en */,
+				C49E84AD23BCD7FF00485F26 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

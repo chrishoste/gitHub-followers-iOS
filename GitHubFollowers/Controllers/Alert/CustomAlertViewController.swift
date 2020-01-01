@@ -10,6 +10,10 @@ import UIKit
 
 class CustomAlertViewController: UIViewController {
 
+    private lazy var titleLabel = UILabel(text: "", textAlignment: .center, font: .systemFont(ofSize: 18, weight: .bold))
+    private lazy var messageLabel = UILabel(text: "", textAlignment: .center, font: .systemFont(ofSize: 16, weight: .regular))
+    private lazy var actionButton = DefaultButton()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,26 +22,31 @@ class CustomAlertViewController: UIViewController {
     }
 
     private func setupAlert() {
-        let titleLabel = UILabel(text: "Error", textAlignment: .center, font: .systemFont(ofSize: 18, weight: .bold))
-        let messageLabel = UILabel(text: "Hier kommt ein bisschen mehr Text um den Fehler zu beschreiben...", textAlignment: .center, font: .systemFont(ofSize: 16, weight: .regular))
-        messageLabel.textColor = .lightGray
-        messageLabel.numberOfLines = 0
-        let button = DefaultButton(type: .error)
-        button.setTitle(localized(.OK), for: .normal)
-        button.addTarget(self, action: #selector(close), for: .touchUpInside)
-        button.constrainHeight(constant: 44)
-
-        let stackView = UIStackView(arrangedSubviews: [titleLabel, messageLabel, button], axis: .vertical, spacing: 16)
-
         let backgroundView = UIView()
         backgroundView.layer.cornerRadius = 10
         backgroundView.backgroundColor = .white
+
+        titleLabel.numberOfLines = 0
+        messageLabel.textColor = .lightGray
+        messageLabel.numberOfLines = 0
+        actionButton.constrainHeight(constant: 44)
+
+        let stackView = UIStackView(arrangedSubviews: [titleLabel, messageLabel, actionButton], axis: .vertical, spacing: 16)
+
         backgroundView.addSubview(stackView)
         stackView.fillSuperview(padding: .init(top: 32, left: 32, bottom: 32, right: 32))
 
         view.addSubview(backgroundView)
         backgroundView.centerInSuperview()
         backgroundView.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 0, left: 64, bottom: 0, right: 64))
+    }
+
+    func setup(title: String, message: String, buttonTitle: String, buttonType: DefaultButtonType = .primary) {
+        titleLabel.text = title
+        messageLabel.text = message
+        actionButton.setTitle(buttonTitle, for: .normal)
+        actionButton.addTarget(self, action: #selector(close), for: .touchUpInside)
+        actionButton.setType(type: buttonType)
     }
 
     @objc
