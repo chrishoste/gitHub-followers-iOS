@@ -1,25 +1,30 @@
 # GitHubFollowers
-Take Home Exercise: https://www.youtube.com/watch?v=MSIe2y6Fee8
+
+The screenshots and learning content from [Sean Allen's course](https://www.youtube.com/watch?v=MSIe2y6Fee8) looked very promising. Unfortunately the course is a bit too expensive for me personally, so I will try to implement the screens myself and stick to his list. It will be my `Take Home Exercise` and a `work in progress` depending on my spare time.
 
 ## General
-I won't set myself any time limits, it is just for learning puropse.
+I won't set myself any time limitation like I said it will be a `work in progress / side project` beside work & studies, it is just for learning puropse.
+
+## Current State
+
+<img width="300" src="https://github.com/chrishoste/GitHubFollowers/blob/master/Capture.gif">
 
 ## Learning Goals
 
-- [ ] 100% ProgrammaticUI
-- [ ] CollectionViews with the new DiffableDataSource
+- [x] 100% ProgrammaticUI
+- [x] CollectionViews with the new DiffableDataSource
 - [ ] Search Controllers
-- [ ] Network Calls
-- [ ] Parsing JSON with Codable
+- [x] Network Calls
+- [x] Parsing JSON with Codable
 - [ ] Pagination of Network calls
 - [ ] Memory Management - Capture Lists [weak self]
 - [ ] Image Caching
-- [ ] No 3rd party libraries (except of SwiftLint)
-- [ ] Dark Mode
+- [x] No 3rd party libraries (except of SwiftLint)
+- [x] Dark Mode
 - [ ] Custom Alerts
-- [ ] Project organization
-- [ ] Composition - Longest VC is 200 lines of code
-- [ ] Child View Controllers
+- [x] Project organization
+- [x] Composition - Longest VC is 200 lines of code
+- [x] Child View Controllers
 - [ ] UITableView
 - [ ] Delegation
 - [ ] Persistence
@@ -27,13 +32,13 @@ I won't set myself any time limits, it is just for learning puropse.
 - [ ] Empty States
 - [ ] SafariViewController
 - [ ] SFSymbols
-- [ ] Localization
+- [x] Localization
 - [ ] Dynamic Type
-- [ ] StackViews
+- [x] StackViews
 - [ ] Date Formatters
 - [ ] Activity Indicators
-- [ ] Reusable Components
-- [ ] SceneDelegate
+- [x] Reusable Components
+- [x] SceneDelegate
 - [ ] Poor Network Testing
 - [ ] Passing Data between views
 - [ ] Overall iOS 13 best practices
