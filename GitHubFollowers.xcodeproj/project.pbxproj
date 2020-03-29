@@ -31,6 +31,8 @@
 		C46F651C23BCBF1D00FE2A7C /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F651B23BCBF1D00FE2A7C /* AlertService.swift */; };
 		C46F651E23BCCE1900FE2A7C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F651D23BCCE1900FE2A7C /* Alert.swift */; };
 		C46F652023BCD11C00FE2A7C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F651F23BCD11C00FE2A7C /* Constants.swift */; };
+		C49E84AF23BD61E400485F26 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49E84AE23BD61E400485F26 /* ProfileCell.swift */; };
+		C4B88E8F23BF4DAF009D40FC /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B88E8E23BF4DAF009D40FC /* CollectionViewLayout.swift */; };
 		C4E9126523B2095E00480C91 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126423B2095E00480C91 /* Colors.swift */; };
 		C4E9126723B2096B00480C91 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126623B2096B00480C91 /* Localization.swift */; };
 		C4E9126923B2097700480C91 /* Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9126823B2097700480C91 /* Autolayout.swift */; };
@@ -93,6 +95,8 @@
 		C46F651D23BCCE1900FE2A7C /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		C46F651F23BCD11C00FE2A7C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C49E84AD23BCD7FF00485F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C49E84AE23BD61E400485F26 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		C4B88E8E23BF4DAF009D40FC /* CollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
 		C4E9126423B2095E00480C91 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C4E9126623B2096B00480C91 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C4E9126823B2097700480C91 /* Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autolayout.swift; sourceTree = "<group>"; };
@@ -271,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				C45592E623B957C3005B6A52 /* ProfilesCollectionViewController.swift */,
+				C49E84AE23BD61E400485F26 /* ProfileCell.swift */,
 			);
 			path = SecondScreen;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				C45592D723B82CBB005B6A52 /* UIImageView+Extension.swift */,
 				C45592D923B830AD005B6A52 /* UIStackView+Extension.swift */,
 				C46F651F23BCD11C00FE2A7C /* Constants.swift */,
+				C4B88E8E23BF4DAF009D40FC /* CollectionViewLayout.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -562,6 +568,7 @@
 				C45592DA23B830AD005B6A52 /* UIStackView+Extension.swift in Sources */,
 				C45592E723B957C3005B6A52 /* ProfilesCollectionViewController.swift in Sources */,
 				C40E9BDA23B206C7002A266A /* ViewController.swift in Sources */,
+				C4B88E8F23BF4DAF009D40FC /* CollectionViewLayout.swift in Sources */,
 				C40E9BD623B206C7002A266A /* AppDelegate.swift in Sources */,
 				C4E9126923B2097700480C91 /* Autolayout.swift in Sources */,
 				C45592E323B95520005B6A52 /* DefaultButton.swift in Sources */,
@@ -569,6 +576,7 @@
 				C46F651C23BCBF1D00FE2A7C /* AlertService.swift in Sources */,
 				C46F651A23B95B2F00FE2A7C /* CustomAlertViewController.swift in Sources */,
 				C45592D623B82C75005B6A52 /* UILabel+Extension.swift in Sources */,
+				C49E84AF23BD61E400485F26 /* ProfileCell.swift in Sources */,
 				C40E9BD823B206C7002A266A /* SceneDelegate.swift in Sources */,
 				C45592DC23B831FD005B6A52 /* SearchTextField.swift in Sources */,
 			);

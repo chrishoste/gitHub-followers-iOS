@@ -15,7 +15,7 @@ class TabbarViewController: UITabBarController {
 
         viewControllers = [
             createNavViewController(viewController: FollowerSearchViewController(), title: localized(.SEARCH), imageName: "magnifyingglass"),
-            createNavViewController(viewController: UIViewController(), title: localized(.FAVE), imageName: "star.fill")
+            createNavViewController(viewController: ViewController(), title: localized(.FAVE), imageName: "star.fill")
         ]
     }
 

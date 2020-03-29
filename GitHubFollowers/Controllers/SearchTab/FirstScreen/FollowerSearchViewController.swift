@@ -10,6 +10,8 @@ import UIKit
 
 class FollowerSearchViewController: UIViewController {
 
+    let searchTextField = SearchTextField()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .backgroundAny
@@ -26,8 +28,6 @@ class FollowerSearchViewController: UIViewController {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "gitHub_logo"), contentMode: .scaleAspectFit)
         imageView.constrainHeight(constant: view.frame.height / 4)
         let followersLabel = UILabel(text: localized(.FOLLOWERS), textAlignment: .center, font: .systemFont(ofSize: 28, weight: .medium))
-
-        let searchTextField = SearchTextField()
 
         let logoStackView = UIStackView(arrangedSubviews: [imageView, followersLabel], axis: .vertical, spacing: 16)
         let stackView = UIStackView(arrangedSubviews: [logoStackView, searchTextField], axis: .vertical, spacing: 32)
@@ -48,7 +48,13 @@ class FollowerSearchViewController: UIViewController {
 
     @objc
     private func buttonAction(_ sender: UIButton) {
-        NetworkingService().getProfiles(username: "chrishoste") { [weak self] (result) in
+        let textFieldText = searchTextField.getText()
+        guard let username = textFieldText else {
+            AlertService().show(target: self, alert: Constants.Alerts.DefaultError)
+            return
+        }
+
+        NetworkingService().getProfiles(username: username) { [weak self] (result) in
             switch result {
             case .success(let followers):
                 DispatchQueue.main.async {
@@ -57,9 +63,11 @@ class FollowerSearchViewController: UIViewController {
                 }
             case .failure(let error):
                 //TODO pass error to alert and use localize description
-                debugPrint(error.localizedDescription)
-                guard let self = self else { return }
-                AlertService().show(target: self, alert: Constants.Alerts.DefaultError)
+                DispatchQueue.main.async {
+                    debugPrint(error.localizedDescription)
+                    guard let self = self else { return }
+                    AlertService().show(target: self, alert: Constants.Alerts.DefaultError)
+                }
             }
         }
     }
