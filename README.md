@@ -21,7 +21,7 @@ I won't set myself any time limitation like I said it will be a `work in progres
 - [ ] Image Caching
 - [x] No 3rd party libraries (except of SwiftLint)
 - [x] Dark Mode
-- [ ] Custom Alerts
+- [x] Custom Alerts
 - [x] Project organization
 - [x] Composition - Longest VC is 200 lines of code
 - [x] Child View Controllers
